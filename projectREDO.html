@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("image1.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+
+.card{
+    background-color: lightgrey;
+    width:500px;
+  
+    padding:10px;
+    margin:10px;
+    display:inline-block;
+    border-radius:10px;
+  border-style: solid;
+    border-width: medium;
+    
+  }
+
+
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black"> TOP SCHOOLS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">SEARCH</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">2012 SAT RESLUTS</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">SAT<br>RESLUTS</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">New York City</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE DATA </span></h5>
+    <p>TThe SAT is a standardized test widely used for college admissions in the United States. In this data base we show SAT results of 2012, in New York City. This data includes the name of the school, How many test takers they had, the average math score, and average writing score. We filtered out this data by including a search bar for users to search each school.</p>
+    <p>The most recent school level results for New York City on the SAT. Results are available at the school level for the graduating seniors of 2012. Records contain 2012 College-bound seniors average SAT scores taken during 2012.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"The SAT is not perfect. We all know smart, knowledgable people who do badly on standarized tests. But neither is it useless. SAT scores do measure both specific knowlwdge and valuable thinking skills." </i></p>
+      <p>- Virginia Postrel</p>
+    </div>
+    <img src="image2.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>"ACTION</strong> is the fundemental key to success."</p>
+    <p><strong>-Pablo</strong> Picasso</p>
+  </div>
+</div>
+
+<!-- Schools Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TOP SCHOOLS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Schools</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Boroughs</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Henry Street School For International Studies</h5>
+      <p class="w3-text-grey">Located: 220 Henry St, New York, NY 10002 </p><br>
+    
+      <h5>University Neighborhood High School</h5>
+      <p class="w3-text-grey">Located: 200 Monroe St, New York, NY 10002</p><br>
+    
+      <h5>East Side Community School</h5>
+      <p class="w3-text-grey">Located: 420 E 12th St, New York, NY 10009</p><br>
+    
+      <h5>Forsyth Satellite Academy</h5>
+      <p class="w3-text-grey">Located: 198 Forsyth St, New York, NY 10002 </p><br>
+    
+      <h5>Marta Valle High School</h5>
+      <p class="w3-text-grey">Located: 145 Stanton St, New York, NY 10002</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Manhattan</h5>
+      <p class="w3-text-grey">Percent of students who took the exam: 54.6%</p><br>
+    
+      <h5>Queens</h5>
+      <p class="w3-text-grey">Percent of students who took the exam: 60.7%</p><br>
+    
+      <h5>Brooklyn</h5>
+      <p class="w3-text-grey">Percent of students who took the exam: 52.1%</p><br>
+    
+      <h5>The Bronx</h5>
+      <p class="w3-text-grey">Percent of students who took the exam: 53.2%</p><br>
+    
+      <h5>Staten Island</h5>
+      <p class="w3-text-grey">Percent of students who took the exam: 51.2%</p>
+    </div>  
+    <img src="image3.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SEARCH </span></h5>
+    <p><span class="w3-tag">Find Your School!</span> We have set up a search area in which users can look for their own school and look for the average 2012 SAT Results. </p>
+   
+
+
+
+<div id="searchbar">
+  
+    <input type="text" id="school_name" placeholder="Enter School Name">
+    
+    <button onclick="search()">Search</button>
+    
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+   
+<script type= "text/template" id="complaintTemplate">
+
+    
+    <div class='card'>
+    <h1> School Name: {{school_name}} </h1>
+    <p> SAT Test Takers: {{num_of_sat_test_takers}} <hr>
+    <p> Math Average Score: {{sat_math_avg_score}} </p><hr>
+    <p> Writing Average Score:  {{sat_writing_avg_score}} </p>
+    </div>
+ </body>
+ </script>
+
+<script>
+  var data="";
+  function loadJSON(){        
+    $.getJSON("https://data.cityofnewyork.us/resource/734v-jeq5.json",function(results){
+      data = results;
+    })
+  }
+  
+  function search(){
+    var build = "";
+    
+    
+    var school_name = document.getElementById("school_name");
+    var output = document.getElementById("output");
+    var cardTemplate = document.getElementById("complaintTemplate").innerHTML;
+    
+    for(var index = 0; index < data.length; index++){
+       if(data[index].school_name.toUpperCase().indexOf(school_name.value.toUpperCase()) != -1
+      ){
+      build += Mustache.render(cardTemplate, data[index]);
+      
+      }
+    } 
+    
+    output.innerHTML = build; 
+  }
+  
+  </script>
+
+<body onload="loadJSON()">
+
+
+
+
+
+  <div id="output">
+    <!--<div class='card'>
+      <h1> school_name </h1>
+      <p>  num_of_sat_test_takers <hr>
+      <p>  sat_math_avg_score </p><hr>
+      <p>  sat_writing_avg_score </p>
+    </div>
+  -->
+</div>
+      
+  </div>
+</div> 
+
+<!-- End page content -->
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Project By: Veronica Brown, Robert Lee, and Brianna Odell</a></p>
+</footer>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>
+
